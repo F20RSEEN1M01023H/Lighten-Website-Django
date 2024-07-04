@@ -1,0 +1,335 @@
+{% comment %} <!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Website Design by Hami!</title>
+    <style>
+        /* navbar  */
+        .navbar {
+            height: 150px;
+            /* background-color; Navbar background color */
+        }
+
+        .navbar-brand img {
+            max-height: 40px;
+            /* Set max height for the logo image */
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            font-weight: 500;
+            padding: 25px;
+            color: black;
+            /* Default text color */
+            transition: color 0.3s ease;
+            /* Smooth color transition */
+        }
+
+        .navbar-nav .nav-item:hover .nav-link,
+        .navbar-nav .nav-item.active .nav-link {
+            color: #ffc107 !important;
+            /* Text color on hover or when active */
+            cursor: pointer;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #ffc107;
+            /* Toggler icon color */
+        }
+
+        .navbar-toggler {
+            border-color: #ffc107;
+            /* Toggler border color */
+        }
+
+        .btn-login {
+            padding: 7px 30px 7px 30px;
+            background-color: #ffc107;
+            /* Login button background color */
+            color: black;
+            /* Login button text color */
+            transition: background-color 0.3s ease, color 0.3s ease;
+            /* Smooth transition */
+
+        }
+
+        .btn-login:hover {
+            background-color: #000;
+            /* Login button background color on hover */
+            color: #ffffff;
+            /* Login button text color on hover */
+            cursor: pointer;
+
+        }
+            /* 6th container   */
+
+
+
+    .container6 {
+
+        background-color: rgba(255, 255, 255, 0.7);
+        height: 1300px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(17, 0, 0, 0.19);
+    }
+
+    .box {
+        width: 30%;
+        background-color: rgb(232, 232, 232);
+        transition: transform 0.3s ease;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(17, 0, 0, 0.19);
+
+    }
+
+    .box:hover {
+        background-color: #ffc107;
+        transform: scale(0.9);
+    }
+    span{
+        color: rgb(203, 57, 57);
+    }
+    h6{
+        color: rgb(181, 48, 48);
+    }
+
+        .container10 {
+            height: 330px;
+        }
+
+        .icon-row {
+            display: block;
+        }
+
+        i {
+            color: white;
+            font-size: 25px;
+        }
+
+        i:hover {
+            border-radius: 50%;
+            background-color: #000;
+            color: white;
+        }
+
+        .footer {
+            color: white;
+            width: 24%;
+        }
+
+        .foot {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .sp {
+            margin-top: -10px;
+        }
+
+        .hp {
+            margin-top: -10px;
+        }
+
+        .hp:hover {
+            color: #ffc107;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body> {% endcomment %}
+    <!-- navbar  -->
+
+
+     {% include 'header.html' %}
+
+    {% comment %} <nav class="navbar navbar-expand-lg  ">
+        <div class="container ">
+
+            <img src="static/assets/logo.jpg" alt="Logo" height="70px " width="300px">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mx-3 " id="navbarNav">
+                <ul class="navbar-nav mx-4  ">
+                    <li class="nav-item   ">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="About.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="Product.html">PRODUCT</a>
+                    </li>
+                    <li class="nav-item active ">
+                        <a class="nav-link " href="Blog.html">BLOG</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="sign up.html">SIGNUP</a>
+                    </li>
+                </ul>
+                <button class="btn btn-login">Login</button>
+            </div>
+        </div>
+    </nav> {% endcomment %}
+    <div class="container-fluid bg-warning text-center p-5">
+        <h1 class="fw-bold">BLOG</h1>
+    </div>
+
+    <div class="container pt-3">
+        <div class="row p-5 text-center">
+            <h3 class=" mt-2">We package the products with best services to make you a happy customer.</h3>
+        </div>
+    </div>
+    <!-- container6  -->
+        <div class="container-fluid container6">
+            <div class="container  pt-5  ">
+                <div class="row  pt-5 justify-content-around">
+                    <div class="col-4 h-25 pt-3 box ">
+                        <img src="static/assets/B1.jpg" alt="" height="70%" width="100%">
+                        <h5 class="pt-2 fw-bold">Live With Music</h5>
+                        <h6 class="">March  <span class="px-4">20Comment</span></h6> 
+                        <p>It is a long established fact that a reader will be distracted by the  readable content of a page when looking at its layout. The point of using  Lorem Ipsum is that it has a more-or-less normal distribution of letters,</p>
+                    </div>
+                    <div class="col-4 h-25 pt-3 box">
+                        <img src="static/assets/B2.jpg" alt="" height="70%" width="100%">
+                        <h5 class="pt-2 fw-bold">Live With Music</h5>
+                        <h6 class="">March  <span class="px-4">20Comment</span></h6> 
+                        <p>It is a long established fact that a reader will be distracted by the  readable content of a page when looking at its layout. The point of using  Lorem Ipsum is that it has a more-or-less normal distribution of letters,</p>
+                    </div>
+                    <div class="col-4 h-25 pt-3 box">
+                        <img src="static/assets/B3.jpg" alt="" height="70%" width="100%">
+                        <h5 class="pt-2 fw-bold">Live With Music</h5>
+                        <h6 class="">March  <span class="px-4">20Comment</span></h6> 
+                        <p>It is a long established fact that a reader will be distracted by the  readable content of a page when looking at its layout. The point of using  Lorem Ipsum is that it has a more-or-less normal distribution of letters,</p>
+                    </div>
+                </div>
+                <div class="row  justify-content-around pt-5">
+                    <div class="col-4 h-25 pt-3 box">
+                        <img src="static/assets/B4.jpg" alt="" height="70%" width="100%">
+                        <h5 class="pt-2 fw-bold">Live With Music</h5>
+                        <h6 class="">March  <span class="px-4">20Comment</span></h6> 
+                        <p>It is a long established fact that a reader will be distracted by the  readable content of a page when looking at its layout. The point of using  Lorem Ipsum is that it has a more-or-less normal distribution of letters,</p>
+                    </div>
+                    <div class="col-4 h-25 pt-3 box">
+                        <img src="static/assets/B5.jpg" alt="" height="70%" width="100%">
+                        <h5 class="pt-2 fw-bold">Live With Music</h5>
+                        <h6 class="">March  <span class="px-4">20Comment</span></h6> 
+                        <p>It is a long established fact that a reader will be distracted by the  readable content of a page when looking at its layout. The point of using  Lorem Ipsum is that it has a more-or-less normal distribution of letters,</p>
+                    </div>
+                    <div class="col-4 h-25 pt-3 box">
+                        <img src="static/assets/B6.jpg" alt="" height="70%" width="100%">
+                        <h5 class="pt-2 fw-bold">Live With Music</h5>
+                        <h6 class="">March  <span class="px-4">20Comment</span></h6> 
+                        <p>It is a long established fact that a reader will be distracted by the  readable content of a page when looking at its layout. The point of using  Lorem Ipsum is that it has a more-or-less normal distribution of letters,</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% include 'footer.html' %}
+
+        {% comment %} <!-- Container10  -->
+        <div class="container-fluid container10 bg-dark">
+            <div class="container">
+                <div class="row icon-row p-4  text-center">
+                    <i class="bi bi-facebook mx-3"></i>
+                    <i class="bi bi-twitter mx-3"></i>
+                    <i class="bi bi-camera-fill mx-3"></i>
+                    <i class="bi bi-camera-fill mx-3"></i>
+                </div>
+                <div class="row foot ">
+                    <div class="footer">
+                        <h3 class="pb-3">CONATCT US</h3>
+                        <p class="sp">123 Second Street Fifth </p>
+                        <p class="sp">Avenue,</p>
+                        <p class="sp">Manhattan, New York</p>
+                        <p class="sp">+987 654 3210</p>
+
+                    </div>
+                    <div class="footer">
+                        <h3 class="pb-3">ADDITIONAL LINKS</h3>
+                        <p class="hp">About us </p>
+                        <p class="hp">Terms and conditions</p>
+                        <p class="hp">Privacy policy</p>
+                        <p class="hp"> News</p>
+                        <p class="hp">Contact us</p>
+                    </div>
+                    <div class="footer">
+                        <h3 class="pb-3">SERVICE</h3>
+                        <p class="hp">Data recovery </p>
+                        <p class="hp"> Computer repair</p>
+                        <p class="hp"> Mobile service</p>
+                        <p class="hp"> Network solutions</p>
+                        <p class="hp">Technical support</p>
+                    </div>
+                    <div class="footer">
+                        <h3 class="pb-3">ABOUT LIGHTEN</h3>
+                        <p class="sp">Tincidunt elit magnis nulla </p>
+                        <p class="sp">facilisis. Dolor Sapien nunc</p>
+                        <p class="sp">amet ultrices,</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row bg-warning text-center">
+                <h4>Copyright 2024 All Right Reserved By Free html Templates Distributed By Hami</h4>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Bootstrap JS Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html> {% endcomment %}

@@ -1,0 +1,572 @@
+     /* navbar  */
+     .navbar {
+        height: 150px;
+        /* background-color; Navbar background color */
+        position: relative;
+        z-index: 1;
+    }
+
+    .navbar-brand img {
+        max-height: 40px;
+        /* Set max height for the logo image */
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        font-weight: 500;
+        padding: 25px;
+        color: black;
+        /* Default text color */
+        transition: color 0.3s ease;
+        /* Smooth color transition */
+    }
+
+    .navbar-nav .nav-item:hover .nav-link,
+    .navbar-nav .nav-item.active .nav-link {
+        color: #ffc107 !important;
+        /* Text color on hover or when active */
+        cursor: pointer;
+    }
+
+    .navbar-toggler-icon {
+        background-color: #ffc107;
+        /* Toggler icon color */
+    }
+
+    .navbar-toggler {
+        border-color: #ffc107;
+        /* Toggler border color */
+    }
+
+    .btn-login {
+        padding: 7px 30px 7px 30px;
+        background-color: #ffc107;
+        /* Login button background color */
+        color: black;
+        /* Login button text color */
+        transition: background-color 0.3s ease, color 0.3s ease;
+        /* Smooth transition */
+
+    }
+
+    .btn-login:hover {
+        background-color: #000;
+        /* Login button background color on hover */
+        color: #ffffff;
+        /* Login button text color on hover */
+        cursor: pointer;
+
+    }
+
+    /* Carousal */
+    .carousel-text {
+        position: absolute;
+        top: 45%;
+        left: 32.5%;
+        /* Adjust this value to position the text div as desired */
+        transform: translate(-50%, -50%);
+        text-align: left;
+        color: #0a0a0a;
+    }
+
+    .bgimg {
+        width: 105%;
+    }
+
+    .bold {
+        font-size: 70px;
+        font-weight: bold;
+    }
+
+    .yellow {
+        font-size: 70px;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 70px;
+        /* font-weight: bold; */
+    }
+
+    .para {
+        font-size: 17px;
+    }
+
+    .btn1 {
+        margin-top: 10px;
+        border: none;
+        padding: 10px 45px 10px 45px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 0px;
+        background-color: #ffc107;
+        color: white;
+    }
+
+    .btn1:hover {
+        background-color: #000000;
+        color: white;
+    }
+
+    /* Container3  */
+    .container3 {
+        height: 690px;
+    }
+
+    .heading {
+
+        font-size: 55px;
+    }
+
+    .yellow1 {
+        color: #ffc107;
+    }
+
+    .yellow1:hover {
+        color: black;
+    }
+
+    .decor {
+        text-decoration: underline;
+    }
+
+
+    .head4 {
+        font-size: 38px;
+    }
+
+
+    .btn2 {
+        border: 2px solid rgb(255, 195, 29);
+        color: black;
+        background-color: white;
+        padding: 10px 35px 10px 35px;
+        position: relative;
+        left: 45%;
+        bottom: 10%;
+    }
+
+    .btn2:hover {
+        color: black;
+        background-color: rgb(255, 195, 29);
+    }
+
+    .height {
+        height: 450px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .col {
+        transition: 0.3s;
+    }
+
+    .col:hover {
+        transform: scale(0.8);
+    }
+
+    /* 4th container  */
+    .container4 {
+        height: 800px;
+    }
+
+    .col-3 {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: 30%;
+        transition: 0.3s;
+    }
+
+    .col-3:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: 30%;
+        transform: scale(1.1);
+    }
+
+    /* 5th container */
+    /* 6th container   */
+
+
+    .bgrimg {
+        position: relative;
+        /* Add position relative to the container */
+        background-image: url('/assets/bg.jpg');
+        background-size: 100% 100%;
+        background-position: fixed;
+        height: 1691px;
+        width: 100%;
+
+    }
+
+    .container6 {
+
+        background-color: rgba(255, 255, 255, 0.7);
+        /* Adjust the alpha (last value) to control transparency */
+        z-index: 1;
+        /* Make sure the overlay is behind the content */
+        height: 800px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(17, 0, 0, 0.19);
+    }
+
+    .box {
+        width: 22%;
+        background-color: rgb(232, 232, 232);
+        z-index: 2;
+        /* Ensure the content is above the overlay */
+        transition: transform 0.3s ease;
+    }
+
+    .box:hover {
+        width: 22%;
+        background-color: #ffc107;
+        z-index: 2;
+        /* Ensure the hover effect is above the overlay */
+        transform: scale(1.1);
+    }
+
+    /* container7 */
+    .container7 {
+
+        background-color: rgba(255, 255, 255, 0.7);
+        /* Adjust the alpha (last value) to control transparency */
+        z-index: 1;
+        /* Make sure the overlay is behind the content */
+        height: 550px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(17, 0, 0, 0.19);
+    }
+
+    .logop {
+        font-size: 19px;
+    }
+
+    .logoh {
+        font-size: 65px;
+    }
+
+    .carousel-pagination {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 380px;
+        right: 520px;
+    }
+
+    .carousel-pagination button {
+        background-color: #aaa;
+        border: none;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+        /* cursor: pointer; */
+    }
+
+    .carousel-pagination button:hover {
+        background-color: #ffc107;
+        cursor: pointer;
+
+    }
+
+    .carousel-pagination button.active {
+        background-color: #ffc107;
+    }
+
+    .q {
+        color: white;
+        font-weight: bold;
+    }
+
+    .getq {
+        padding: 10px 70px 10px 70px;
+        border: none;
+        border-radius: 45px;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+
+    .container8 {
+        margin-top: 150px;
+    }
+
+    .container9 {
+        height: 350px;
+        width: 100%;
+        background-image: url('/assets/map.jpg');
+        background-size: cover;
+
+    }
+
+    .mapimg {
+        width: 100%;
+    }
+
+    .container10 {
+        height: 330px;
+    }
+
+    .icon-row {
+        display: block;
+    }
+
+    i {
+        color: white;
+        font-size: 25px;
+    }
+
+    i:hover {
+        border-radius: 50%;
+        background-color: #000;
+        color: white;
+    }
+    .footer{
+        color: white;
+        width: 24%;
+    }
+    .foot{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .sp{
+        margin-top: -10px;
+    }
+    .hp{
+        margin-top: -10px;
+    }
+    .hp:hover{
+        color: #ffc107;
+        cursor: pointer;
+    }
+
+
+
+          /* navbar  */
+          .navbar {
+            height: 150px;
+            /* background-color; Navbar background color */
+        }
+    
+        .navbar-brand img {
+            max-height: 40px;
+            /* Set max height for the logo image */
+        }
+    
+        .navbar-nav .nav-item .nav-link {
+            font-weight: 500;
+            padding: 25px;
+            color: black;
+            /* Default text color */
+            transition: color 0.3s ease;
+            /* Smooth color transition */
+        }
+    
+        .navbar-nav .nav-item:hover .nav-link,
+        .navbar-nav .nav-item.active .nav-link {
+            color: #ffc107 !important;
+            /* Text color on hover or when active */
+            cursor: pointer;
+        }
+    
+        .navbar-toggler-icon {
+            background-color: #ffc107;
+            /* Toggler icon color */
+        }
+    
+        .navbar-toggler {
+            border-color: #ffc107;
+            /* Toggler border color */
+        }
+    
+        .btn-login {
+            padding: 7px 30px 7px 30px;
+            background-color: #ffc107;
+            /* Login button background color */
+            color: black;
+            /* Login button text color */
+            transition: background-color 0.3s ease, color 0.3s ease;
+            /* Smooth transition */
+    
+        }
+    
+        .btn-login:hover {
+            background-color: #000;
+            /* Login button background color on hover */
+            color: #ffffff;
+            /* Login button text color on hover */
+            cursor: pointer;
+    
+        }
+         /* Container3  */
+         .container3 {
+            height: 690px;
+        }
+    
+        .heading {
+    
+            font-size: 55px;
+        }
+    
+        .yellow1 {
+            color: #ffc107;
+        }
+    
+        .yellow1:hover {
+            color: black;
+        }
+    
+        .decor {
+            text-decoration: underline;
+        }
+    
+    
+        .head4 {
+            font-size: 38px;
+        }
+    
+    
+        .btn2 {
+            border: 2px solid rgb(255, 195, 29);
+            color: black;
+            background-color: white;
+            padding: 10px 35px 10px 35px;
+            position: relative;
+            left: 45%;
+            bottom: 10%;
+        }
+    
+        .btn2:hover {
+            color: black;
+            background-color: rgb(255, 195, 29);
+        }
+    
+        .height {
+            height: 450px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    
+        .col {
+            transition: 0.3s;
+        }
+    
+        .col:hover {
+            transform: scale(0.8);
+        }
+    
+        /* 4th container  */
+        .container4 {
+            height: 800px;
+        }
+    
+        .col-3 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            width: 30%;
+            transition: 0.3s;
+        }
+    
+        .col-3:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            width: 30%;
+            transform: scale(1.1);
+        }
+        .container10 {
+            height: 330px;
+        }
+    
+        .icon-row {
+            display: block;
+        }
+    
+        i {
+            color: white;
+            font-size: 25px;
+        }
+    
+        i:hover {
+            border-radius: 50%;
+            background-color: #000;
+            color: white;
+        }
+        .footer{
+            color: white;
+            width: 24%;
+        }
+        .foot{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .sp{
+            margin-top: -10px;
+        }
+        .hp{
+            margin-top: -10px;
+        }
+        .hp:hover{
+            color: #ffc107;
+            cursor: pointer;
+        }
+    /* Blog  */
+    .container6 {
+
+        background-color: rgba(255, 255, 255, 0.7);
+        height: 1900px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(17, 0, 0, 0.19);
+    }
+
+    .box {
+        width: 30%;
+        background-color: rgb(232, 232, 232);
+        transition: transform 0.3s ease;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(17, 0, 0, 0.19);
+
+    }
+
+    .box:hover {
+        background-color: #ffc107;
+        transform: scale(0.9);
+    }
+    span{
+        color: rgb(203, 57, 57);
+    }
+    h6{
+        color: rgb(181, 48, 48);
+    }
+
+        .container10 {
+            height: 330px;
+        }
+
+        .icon-row {
+            display: block;
+        }
+
+        i {
+            color: white;
+            font-size: 25px;
+        }
+
+        i:hover {
+            border-radius: 50%;
+            background-color: #000;
+            color: white;
+        }
+
+        .footer {
+            color: white;
+            width: 24%;
+        }
+
+        .foot {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .sp {
+            margin-top: -10px;
+        }
+
+        .hp {
+            margin-top: -10px;
+        }
+
+        .hp:hover {
+            color: #ffc107;
+            cursor: pointer;
+        }
